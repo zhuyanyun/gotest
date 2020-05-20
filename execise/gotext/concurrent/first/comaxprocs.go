@@ -35,7 +35,7 @@ func test2(n int) {
 	wg.Wait()
 }
 
-func main() {
+func main77() {
 	n := runtime.GOMAXPROCS(0)
 
 	m := runtime.NumCPU()
