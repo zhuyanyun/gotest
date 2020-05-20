@@ -25,6 +25,6 @@ func main() {
 
 	p.modifyutpr()    //go编辑器会自动帮取指针
 	(&p).modifyutpr() //都可以
-	fmt.Println(p.string())
+	fmt.Println((&p).string())
 
 }
