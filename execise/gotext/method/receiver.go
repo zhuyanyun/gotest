@@ -14,11 +14,20 @@ func (n *N) pointer() {
 	fmt.Printf("p: %p, %v\n", n, *n)
 }
 
-func main() {
+func main1002() {
 	var a N = 5
+	p := &a
 
 	a.value()
 	a.pointer()
+
+	p.value()
+	p.pointer()
+
+	p.pointer()
+	p.value()
+	p.value()
+	p.value()
 
 	fmt.Printf("a: %p, %v\n", &a, a)
 }
