@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main8() {
 	var wg sync.WaitGroup
 	ready := make(chan struct{})
 
