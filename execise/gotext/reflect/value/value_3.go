@@ -5,7 +5,7 @@ import (
     "fmt"
 )
 
-func main()  {
+func main3()  {
     type user struct {
 	Name string
 	Age int
