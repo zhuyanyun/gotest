@@ -3,11 +3,16 @@ package main
 import (
 	"fmt"
 	"reflect"
+    "time"
 )
 
 type User2 struct {
 	Name string
 	Age  int
+}
+
+func (u User2) Print(prfix string){
+    fmt.Printf("%s ;  Name is %s Age is %d", prfix, u.Name, u.Age)
 }
 
 func main() {
@@ -26,4 +31,12 @@ func main() {
 
 	t1 := v.Type()
 	fmt.Println(t1)
+
+    time.Sleep(time.Second *3)
+    println("================","动态调用方法")
+
+
+    mPrint := v.MethodByName("Print")
+    args := []reflect.Value{reflect.ValueOf("前缀")}
+    fmt.Println(mPrint.Call(args))
 }
