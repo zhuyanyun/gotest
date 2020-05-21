@@ -1,6 +1,6 @@
 package main
 
-func main() {
+func main2() {
 	c := make(chan int, 3)
 
 	c <- 10
